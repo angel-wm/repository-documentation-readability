@@ -29,9 +29,23 @@ It covers:
 - anti-patterns and a review checklist;
 - worked before/after transformations in [examples/before-after.md](examples/before-after.md).
 
+## Agent Skill
+
+For repeated AI-assisted documentation work, this repository also ships an installable skill at [`skills/repository-documentation-readability/`](skills/repository-documentation-readability/).
+
+The skill uses progressive loading:
+
+- `SKILL.md` contains the compact operational rules used for ordinary documentation tasks;
+- `references/GUIDE.md` bundles the complete guide for targeted or comprehensive loading when a task is complex;
+- `references/before-after.md` provides worked examples only when they are useful.
+
+This keeps routine context small without removing access to the full guidance.
+
+When installing the skill elsewhere, copy the **entire skill directory**, not only `SKILL.md`. The root `GUIDE.md` and `examples/before-after.md` remain canonical in this source repository; the copies under `references/` exist so the skill remains self-contained when installed.
+
 ## Use it from another repository
 
-To follow the current `main` version, another project can point an AI assistant or human reviewer to:
+For repeated AI use, prefer installing the skill above. For an ad-hoc task without installation, another project can point an AI assistant or human reviewer to the current `main` guide:
 
 ```text
 https://github.com/angel-wm/repository-documentation-readability/blob/main/GUIDE.md
