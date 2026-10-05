@@ -41,7 +41,31 @@ The skill uses progressive loading:
 
 This keeps routine context small without removing access to the full guidance.
 
-When installing the skill elsewhere, copy the **entire skill directory**, not only `SKILL.md`. The root `GUIDE.md` and `examples/before-after.md` remain canonical in this source repository; the copies under `references/` exist so the skill remains self-contained when installed.
+### Install in another repository
+
+For repository-local Codex use, copy the **entire skill directory** into:
+
+```text
+your-repository/
+└── .agents/
+    └── skills/
+        └── repository-documentation-readability/
+            ├── SKILL.md
+            └── references/
+                ├── GUIDE.md
+                └── before-after.md
+```
+
+In other words:
+
+```text
+skills/repository-documentation-readability/
+→ .agents/skills/repository-documentation-readability/
+```
+
+Do not copy only `SKILL.md`: the files under `references/` provide the full guide and examples when a task needs deeper coverage.
+
+The root `GUIDE.md` and `examples/before-after.md` remain canonical in this source repository; the copies under the skill's `references/` directory exist so the installed skill remains self-contained.
 
 ## Use it from another repository
 
