@@ -14,6 +14,19 @@ The core principle is:
 
 > Preserve technical truth, then reduce reader effort.
 
+## Quick navigation
+
+- [Reader intent](#start-with-the-readers-intent)
+- [Audience and relevance](#audience-and-relevance)
+- [Choosing a representation](#choose-the-simplest-useful-representation)
+- [Troubleshooting](#troubleshooting)
+- [Mermaid diagrams](#mermaid-diagrams)
+- [Accessibility and Markdown portability](#accessibility-and-visual-independence)
+- [README guidance](#readme-guidance)
+- [Worked examples](#worked-examples)
+- [Review checklist](#review-checklist)
+- [Influences and boundaries](#influences-and-boundaries)
+
 ## Start with the reader's intent
 
 Before choosing a format, identify what the reader is trying to accomplish.

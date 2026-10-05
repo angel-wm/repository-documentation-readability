@@ -4,6 +4,8 @@ Practical guidance for clear, readable, and mobile-friendly repository documenta
 
 This project focuses on **how technical repository documentation is presented**: how to explain difficult material without removing technical detail, structure a README for progressive reading, and choose appropriately between prose, tables, procedures, code blocks, text trees, and Mermaid diagrams.
 
+It is useful for repository maintainers, developers, technical writers, and AI-assisted documentation workflows.
+
 It is not a documentation standard, protocol, schema, or certification system. A project's own semantics, specifications, required structures, and authoritative sources always take precedence.
 
 ## Guide
@@ -41,7 +43,7 @@ A concise instruction is enough:
 
 Do not copy the entire guide into every repository unless the project specifically needs a local copy.
 
-Once tagged releases exist, pin a release tag instead of `main` when reproducible guidance is more important than following the latest revision.
+Use `main` to follow the current development guide. When reproducibility matters, pin a published release tag instead.
 
 ## Relationship to existing documentation practice
 
@@ -55,7 +57,9 @@ See [Influences and boundaries](GUIDE.md#influences-and-boundaries) for what the
 
 ## Status
 
-The guide currently defines version **0.2** on `main`. Formal immutable snapshots are represented by Git tags and GitHub Releases when present. `main` may continue to evolve after a release.
+The guide currently defines version **0.2** on `main`. Fixed release snapshots are represented by Git tags and GitHub Releases. `main` may continue to evolve after a release.
+
+For corrections or suggestions, [open a GitHub issue](https://github.com/angel-wm/repository-documentation-readability/issues).
 
 ## License
 
