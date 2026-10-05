@@ -21,11 +21,12 @@ The guide covers:
 - accessibility and visual independence;
 - README structure;
 - mobile/desktop balance;
-- anti-patterns and a review checklist.
+- anti-patterns and a review checklist;
+- worked before/after transformations in [examples/before-after.md](examples/before-after.md).
 
 ## Use it from another repository
 
-For the current draft, another project can point an AI assistant or human reviewer to:
+To follow the current `main` version, another project can point an AI assistant or human reviewer to:
 
 ```text
 https://github.com/angel-wm/repository-documentation-readability/blob/main/GUIDE.md
@@ -51,7 +52,7 @@ See [Related foundations](GUIDE.md#related-foundations) for the sources that inf
 
 ## Status
 
-The guide is currently **draft 0.1**. No formal tagged release is published yet.
+The guide currently defines version **0.1**. Formal immutable snapshots are represented by Git tags and GitHub Releases when present. `main` may continue to evolve after a release.
 
 ## License
 

@@ -1,6 +1,6 @@
 # Repository Documentation Readability Guide
 
-Draft version: **0.1**
+Guide version: **0.1**
 
 ## Purpose
 
@@ -484,6 +484,15 @@ Do not force specification, architecture, decisions, tutorials, history, and evi
 ### Technical dump before orientation
 
 Do not begin with implementation internals when a new reader still does not know what the project is or why it matters.
+
+## Worked examples
+
+The guide includes two fictional before/after transformations in [examples/before-after.md](examples/before-after.md):
+
+- a dense README section rewritten into a clearer explanation, procedure, and compact reference table;
+- an overengineered Mermaid flow simplified into a numbered procedure, keeping visual structure only where it adds information.
+
+Use the examples to understand the reasoning behind the transformations, not as mandatory templates. The right representation still depends on the project, audience, and technical contract.
 
 ## Review checklist
 
