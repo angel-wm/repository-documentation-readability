@@ -766,19 +766,3 @@ Teach the reader enough to build a mental model, then expose deeper detail progr
 The objective is not more visual material.
 
 The objective is less friction between the reader and the technical truth.
-
-
-
-Use:
-
-**prose for explanation, tables for comparison, numbered lists for ordered procedures, code blocks for literal technical material, text trees for filesystem structure, and Mermaid for relationships or flows.**
-
-Preserve technical meaning first.
-
-Teach the reader enough to build a mental model.
-
-Then expose deeper detail progressively.
-
-The objective is not more visual material.
-
-The objective is less friction between the reader and the technical truth.
