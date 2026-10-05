@@ -55,7 +55,7 @@ See [Influences and boundaries](GUIDE.md#influences-and-boundaries) for what the
 
 ## Status
 
-The guide currently defines version **0.1**. Formal immutable snapshots are represented by Git tags and GitHub Releases when present. `main` may continue to evolve after a release.
+The guide currently defines version **0.2** on `main`. Formal immutable snapshots are represented by Git tags and GitHub Releases when present. `main` may continue to evolve after a release.
 
 ## License
 

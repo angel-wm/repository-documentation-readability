@@ -1,6 +1,6 @@
 # Repository Documentation Readability Guide
 
-Guide version: **0.1**
+Guide version: **0.2**
 
 ## Purpose
 
