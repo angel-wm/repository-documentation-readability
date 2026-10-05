@@ -10,16 +10,19 @@ It is not a documentation standard, protocol, schema, or certification system. A
 
 Read [GUIDE.md](GUIDE.md) for the full guidance.
 
-The guide covers:
+The guide combines compatible ideas from established documentation practice while staying focused on repository readability.
 
-- reader-first and didactic technical explanation;
+It covers:
+
+- reader intent using the tutorial / how-to / reference / explanation distinction;
+- audience, relevance, prerequisites, and limitations;
 - preserving technical meaning before presentation;
-- progressive disclosure;
-- prose, headings, navigation, tables, and procedures;
-- code, commands, examples, and file trees;
+- progressive disclosure and documentation-set qualities;
+- prose, headings, navigation, tables, procedures, and troubleshooting;
+- code, commands, example validation, and file trees;
 - Mermaid diagram selection and orientation;
-- accessibility and visual independence;
-- README structure;
+- accessibility, descriptive links, terminology, and source-readable Markdown;
+- README structure and repository coherence;
 - mobile/desktop balance;
 - anti-patterns and a review checklist;
 - worked before/after transformations in [examples/before-after.md](examples/before-after.md).
@@ -48,7 +51,7 @@ Instead, it concentrates on a narrower question:
 
 > How should repository documentation present technical information so that it remains rigorous, understandable, scannable, and useful across mobile and desktop?
 
-See [Related foundations](GUIDE.md#related-foundations) for the sources that inform the guide.
+See [Influences and boundaries](GUIDE.md#influences-and-boundaries) for what the guide adopts from each source and what it deliberately leaves out.
 
 ## Status
 

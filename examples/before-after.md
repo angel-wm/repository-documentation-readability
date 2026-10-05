@@ -101,13 +101,47 @@ A numbered list exposes the order more directly, is easier to copy into a checkl
 
 The branch is simple enough to explain in one sentence. If troubleshooting later develops several distinct paths, a small decision diagram may become useful at that point.
 
+## Example 3: structure troubleshooting around recovery
+
+### Before
+
+> If the worker does not start, first make sure Redis is running because sometimes the connection string is wrong or the service has not started, and you can also check the logs, and if you changed the environment file you might need to restart the terminal, and the worker should eventually print ready when everything is correct.
+
+The paragraph mixes several possible causes, actions, and an expected result without telling the reader what to check first.
+
+### After
+
+#### Worker does not start
+
+| Symptom | Likely cause | Resolution | Verify |
+| --- | --- | --- | --- |
+| Worker exits with a Redis connection error | Redis is not running | Start the configured Redis service | Retry the worker; the Redis connection error is gone |
+| Worker connects to the wrong host | `REDIS_URL` is incorrect | Correct `REDIS_URL` in the environment | Print or inspect the active configuration, then retry |
+| Environment changes are ignored | The current shell still has old values | Reload the environment or open a new shell | Start the worker and confirm it uses the updated value |
+
+If none of these paths matches the observed failure, inspect the startup logs before changing additional configuration.
+
+A healthy worker prints:
+
+```text
+ready
+```
+
+### Why the after version is easier to use
+
+The reader can match an observable symptom to a likely cause, perform one targeted action, and verify whether recovery occurred.
+
+The table also separates known troubleshooting paths from open-ended diagnostics instead of presenting every possibility as equally likely.
+
 ## What these examples demonstrate
 
 A readability refactor should not ask, "How can I make this more visual?"
 
 It should ask:
 
-1. What question is the reader trying to answer?
-2. Which information is explanation, procedure, reference, or relationship?
-3. What is the simplest representation that preserves the technical truth?
-4. Can the reader find the answer quickly on both a narrow and a wide screen?
+1. What is the reader trying to do: learn, complete a task, look up facts, or understand?
+2. Who is the intended reader, and what must they already know or have?
+3. Which information is explanation, procedure, reference, troubleshooting, or relationship?
+4. What is the simplest representation that preserves the technical truth?
+5. Can examples, links, and expected results be checked?
+6. Can the reader find the answer quickly on both a narrow and a wide screen?
